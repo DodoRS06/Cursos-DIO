@@ -1,6 +1,7 @@
 let heroi = ["Douglas", 500];
 let classificacao = "";
 let incrementoDeXP = 1000;
+let mensagem = "O Herói de nome " + heroi[0] + " está no nível de ";
 
 console.log("\n Olá " + heroi[0] + ", seu nível de XP inicial é " + heroi[1] + ".")
 console.log("----------------------------------------------- \n")
@@ -23,9 +24,9 @@ while (heroi[1] < 9000) {
     }
 
     if(classificacao === "Ascendente"){
-        console.log("O Herói de nome " + heroi[0] + " está no nível de " + classificacao + ".");
+        console.log(mensagem + classificacao + ".");
     }else{
-        console.log("O Herói de nome " + heroi[0] + " está no nível de " + classificacao + ".");
+        console.log(mensagem + classificacao + ".");
         console.log("O Herói ganhou 1000XP! \n");
     }
     
